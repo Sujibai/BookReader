@@ -3,7 +3,7 @@ import * as Icons from '@mui/icons-material';
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-
+import theme from './theme/theme';
 import AdminFrame from './comp/AdminFrame';
 
 const MenuItems = [
@@ -19,7 +19,8 @@ const defaultTheme = createTheme();
 
 function Admin() {
     return (
-      <ThemeProvider theme={defaultTheme}>
+      // <ThemeProvider theme={defaultTheme}>
+      <ThemeProvider theme={theme}>
       <Box sx={{ display: 'flex',height: '100vh' }}>
       <CssBaseline />
         <AdminFrame menuconfig={SideMenuConfig} TopBarTitle='Dashbord'>

@@ -14,6 +14,7 @@ import { useSideMenu } from '../SideMenu/SideMenuContext';
 import { getGlobalSearchQuery, setGlobalSearchQuery } from '../../context/AppData';
 
 
+
 const drawerWidth: number = 240;
 interface AppBarProps extends MuiAppBarProps {
     open?: boolean;
@@ -102,7 +103,7 @@ function TopBar(props:TopBarProps){
       }
     };
     return(
-        <AppBar position="absolute" open={open}>
+        <AppBar position="absolute" color='primary' open={open}>
         <Toolbar
           sx={{
             pr: '24px', // keep right padding when drawer closed

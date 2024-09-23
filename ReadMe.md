@@ -48,5 +48,9 @@ npm install axios
 
 ### 后端配置说明
 
-后端 API 服务使用 fastapi
+后端 API 服务使用 fastapi，仅接受来自 `localhost:3000` 的请求，应将后端服务开启在 `8000` 端口
+
+```
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
 

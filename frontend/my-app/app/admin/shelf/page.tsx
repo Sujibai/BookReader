@@ -16,6 +16,8 @@ import { BrokenImageOutlined } from '@mui/icons-material';
 import AdminFrame from '../comp/AdminFrame';
 import { url } from 'inspector';
 
+import { fetchBooks } from '../api/api';
+
 const MenuItems = [
   { href: '/admin', primary: 'Dashboard', isActive: false, icon: <Icons.Dashboard /> },
   { href: '/admin/shelf', primary: 'Shelf', isActive: true, icon: <Icons.Book /> },
@@ -79,10 +81,10 @@ const BookInfo2 = {
 }
 
 
-const fetchBooks = async () => {
-    const res = await axios.get('http://localhost:8000/api/data');
-    return res.data;
-  };
+// const fetchBooks = async () => {
+//     const res = await axios.get('http://localhost:8000/api/data');
+//     return res.data;
+//   };
   const Admin = () => {
     const [books, setBooks] = React.useState<CardComponentProps[]>([]);
     const getBooks = async () => {
