@@ -155,7 +155,7 @@ function TopBar(props:TopBarProps){
           <Box>
           </Box>
           <Box sx={{ justifyContent: 'flex-end' }}>
-          <IconButton color="inherit">
+          <IconButton color="default">
             <Badge badgeContent={4} color="secondary">
               <Icons.Notifications />
             </Badge>
